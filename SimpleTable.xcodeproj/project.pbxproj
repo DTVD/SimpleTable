@@ -15,6 +15,13 @@
 		B4CDE80A158EE77400B430E9 /* SimpleTableAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CDE809158EE77400B430E9 /* SimpleTableAppDelegate.m */; };
 		B4CDE80D158EE77400B430E9 /* SimpleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CDE80C158EE77400B430E9 /* SimpleTableViewController.m */; };
 		B4CDE810158EE77400B430E9 /* SimpleTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4CDE80E158EE77400B430E9 /* SimpleTableViewController.xib */; };
+		B4CDE817158EF57000B430E9 /* snow_leopard.png in Resources */ = {isa = PBXBuildFile; fileRef = B4CDE816158EF57000B430E9 /* snow_leopard.png */; };
+		B4CDE81E158EF9B300B430E9 /* Lion.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B4CDE81C158EF9B300B430E9 /* Lion.jpg */; };
+		B4CDE81F158EF9B300B430E9 /* MoutainLion.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B4CDE81D158EF9B300B430E9 /* MoutainLion.jpg */; };
+		B4CDE821158EFB4B00B430E9 /* SimpleTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4CDE820158EFB4B00B430E9 /* SimpleTableCell.xib */; };
+		B4CDE824158F001500B430E9 /* SimpleTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CDE823158F001500B430E9 /* SimpleTableCell.m */; };
+		B4CDE82C158F38AE00B430E9 /* recipes.plist in Resources */ = {isa = PBXBuildFile; fileRef = B4CDE82B158F38AE00B430E9 /* recipes.plist */; };
+		B4CDE830158F3FA400B430E9 /* Splash.png in Resources */ = {isa = PBXBuildFile; fileRef = B4CDE82F158F3FA400B430E9 /* Splash.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +29,23 @@
 		B4CDE7F9158EE77400B430E9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B4CDE7FB158EE77400B430E9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B4CDE7FD158EE77400B430E9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		B4CDE801158EE77400B430E9 /* SimpleTable-Info.plist */ = {isa = PBXFileReference; path = "SimpleTable-Info.plist"; sourceTree = "<group>"; };
+		B4CDE801158EE77400B430E9 /* SimpleTable-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleTable-Info.plist"; sourceTree = "<group>"; };
 		B4CDE803158EE77400B430E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B4CDE805158EE77400B430E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B4CDE807158EE77400B430E9 /* SimpleTable-Prefix.pch */ = {isa = PBXFileReference; path = "SimpleTable-Prefix.pch"; sourceTree = "<group>"; };
-		B4CDE808158EE77400B430E9 /* SimpleTableAppDelegate.h */ = {isa = PBXFileReference; path = SimpleTableAppDelegate.h; sourceTree = "<group>"; };
+		B4CDE807158EE77400B430E9 /* SimpleTable-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleTable-Prefix.pch"; sourceTree = "<group>"; };
+		B4CDE808158EE77400B430E9 /* SimpleTableAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleTableAppDelegate.h; sourceTree = "<group>"; };
 		B4CDE809158EE77400B430E9 /* SimpleTableAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleTableAppDelegate.m; sourceTree = "<group>"; };
-		B4CDE80B158EE77400B430E9 /* SimpleTableViewController.h */ = {isa = PBXFileReference; path = SimpleTableViewController.h; sourceTree = "<group>"; };
+		B4CDE80B158EE77400B430E9 /* SimpleTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleTableViewController.h; sourceTree = "<group>"; };
 		B4CDE80C158EE77400B430E9 /* SimpleTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleTableViewController.m; sourceTree = "<group>"; };
 		B4CDE80F158EE77400B430E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SimpleTableViewController.xib; sourceTree = "<group>"; };
+		B4CDE816158EF57000B430E9 /* snow_leopard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snow_leopard.png; sourceTree = "<group>"; };
+		B4CDE81C158EF9B300B430E9 /* Lion.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Lion.jpg; sourceTree = "<group>"; };
+		B4CDE81D158EF9B300B430E9 /* MoutainLion.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MoutainLion.jpg; sourceTree = "<group>"; };
+		B4CDE820158EFB4B00B430E9 /* SimpleTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleTableCell.xib; sourceTree = "<group>"; };
+		B4CDE822158F001500B430E9 /* SimpleTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTableCell.h; sourceTree = "<group>"; };
+		B4CDE823158F001500B430E9 /* SimpleTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableCell.m; sourceTree = "<group>"; };
+		B4CDE82B158F38AE00B430E9 /* recipes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = recipes.plist; sourceTree = "<group>"; };
+		B4CDE82F158F3FA400B430E9 /* Splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Splash.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +65,14 @@
 		B4CDE7EA158EE77400B430E9 = {
 			isa = PBXGroup;
 			children = (
+				B4CDE82F158F3FA400B430E9 /* Splash.png */,
+				B4CDE82B158F38AE00B430E9 /* recipes.plist */,
+				B4CDE822158F001500B430E9 /* SimpleTableCell.h */,
+				B4CDE823158F001500B430E9 /* SimpleTableCell.m */,
+				B4CDE820158EFB4B00B430E9 /* SimpleTableCell.xib */,
+				B4CDE81C158EF9B300B430E9 /* Lion.jpg */,
+				B4CDE81D158EF9B300B430E9 /* MoutainLion.jpg */,
+				B4CDE816158EF57000B430E9 /* snow_leopard.png */,
 				B4CDE7FF158EE77400B430E9 /* SimpleTable */,
 				B4CDE7F8158EE77400B430E9 /* Frameworks */,
 				B4CDE7F6158EE77400B430E9 /* Products */,
@@ -150,6 +173,12 @@
 			files = (
 				B4CDE804158EE77400B430E9 /* InfoPlist.strings in Resources */,
 				B4CDE810158EE77400B430E9 /* SimpleTableViewController.xib in Resources */,
+				B4CDE817158EF57000B430E9 /* snow_leopard.png in Resources */,
+				B4CDE81E158EF9B300B430E9 /* Lion.jpg in Resources */,
+				B4CDE81F158EF9B300B430E9 /* MoutainLion.jpg in Resources */,
+				B4CDE821158EFB4B00B430E9 /* SimpleTableCell.xib in Resources */,
+				B4CDE82C158F38AE00B430E9 /* recipes.plist in Resources */,
+				B4CDE830158F3FA400B430E9 /* Splash.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +192,7 @@
 				B4CDE806158EE77400B430E9 /* main.m in Sources */,
 				B4CDE80A158EE77400B430E9 /* SimpleTableAppDelegate.m in Sources */,
 				B4CDE80D158EE77400B430E9 /* SimpleTableViewController.m in Sources */,
+				B4CDE824158F001500B430E9 /* SimpleTableCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
