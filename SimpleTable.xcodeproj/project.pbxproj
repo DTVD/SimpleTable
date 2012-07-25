@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B4A6F4A615C0835700F35FFC /* OS.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A6F4A515C0835700F35FFC /* OS.m */; };
 		B4CDE7FA158EE77400B430E9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CDE7F9158EE77400B430E9 /* UIKit.framework */; };
 		B4CDE7FC158EE77400B430E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CDE7FB158EE77400B430E9 /* Foundation.framework */; };
 		B4CDE7FE158EE77400B430E9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CDE7FD158EE77400B430E9 /* CoreGraphics.framework */; };
@@ -25,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B4A6F4A415C0835700F35FFC /* OS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OS.h; sourceTree = "<group>"; };
+		B4A6F4A515C0835700F35FFC /* OS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OS.m; sourceTree = "<group>"; };
 		B4CDE7F5158EE77400B430E9 /* SimpleTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4CDE7F9158EE77400B430E9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B4CDE7FB158EE77400B430E9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -104,6 +107,8 @@
 				B4CDE809158EE77400B430E9 /* SimpleTableAppDelegate.m */,
 				B4CDE80B158EE77400B430E9 /* SimpleTableViewController.h */,
 				B4CDE80C158EE77400B430E9 /* SimpleTableViewController.m */,
+				B4A6F4A415C0835700F35FFC /* OS.h */,
+				B4A6F4A515C0835700F35FFC /* OS.m */,
 				B4CDE80E158EE77400B430E9 /* SimpleTableViewController.xib */,
 				B4CDE800158EE77400B430E9 /* Supporting Files */,
 			);
@@ -193,6 +198,7 @@
 				B4CDE80A158EE77400B430E9 /* SimpleTableAppDelegate.m in Sources */,
 				B4CDE80D158EE77400B430E9 /* SimpleTableViewController.m in Sources */,
 				B4CDE824158F001500B430E9 /* SimpleTableCell.m in Sources */,
+				B4A6F4A615C0835700F35FFC /* OS.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +310,7 @@
 				B4CDE815158EE77400B430E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

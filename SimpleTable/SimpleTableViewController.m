@@ -8,6 +8,7 @@
 
 #import "SimpleTableViewController.h"
 #import "SimpleTableCell.h"
+#import "OS.h"
 
 @implementation SimpleTableViewController
 
@@ -16,6 +17,7 @@
     NSArray *tableData;
     NSArray *preptimeData;
     NSArray *thumbnails;
+    NSArray *OSs;
 }
 
 - (void)didReceiveMemoryWarning
@@ -38,22 +40,37 @@
     preptimeData = [NSArray arrayWithObjects:@"10 min", @"25 min", @"15 min", nil];
     thumbnails = [NSArray arrayWithObjects:@"snow_leopard.png", @"MoutainLion.jpg", @"Lion.jpg", nil];
     
-    
-    
     // Determine plist
     NSString *path = [[NSBundle mainBundle] pathForResource:@"recipes" ofType:@"plist"];
     // Load content
     NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
     tableData = [dict objectForKey:@"RecipeName"];
-    thumbnails = [dict objectForKey:@"Thumbnail"];
     preptimeData = [dict objectForKey:@"PrepTime"];
+    thumbnails = [dict objectForKey:@"Thumbnail"];
     
+    //OS Init
+    OS *OS1 = [OS new];
+    OS1.name = [[dict objectForKey:@"RecipeName"] objectAtIndex:0 ];
+    OS1.prepTime = [[dict objectForKey:@"PrepTime"] objectAtIndex:0 ];
+    OS1.imageFile = [[dict objectForKey:@"Thumbnail"] objectAtIndex:0 ];
+    
+    OS *OS2 = [OS new];
+    OS2.name = [[dict objectForKey:@"RecipeName"] objectAtIndex:1 ];
+    OS2.prepTime = [[dict objectForKey:@"PrepTime"] objectAtIndex:1 ];
+    OS2.imageFile = [[dict objectForKey:@"Thumbnail"] objectAtIndex:1 ];
+
+    OS *OS3 = [OS new];
+    OS3.name = [[dict objectForKey:@"RecipeName"] objectAtIndex:2 ];
+    OS3.prepTime = [[dict objectForKey:@"PrepTime"] objectAtIndex:2 ];
+    OS3.imageFile = [[dict objectForKey:@"Thumbnail"] objectAtIndex:2 ];
+
+    OSs = [NSArray arrayWithObjects: OS1, OS2, OS3, nil];
 }
 
 // numberOfRowsInSection
 - (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [tableDataMu count];
+    return [OSs count];
 }
 
 // cellForRowAtIndexPath
@@ -67,13 +84,15 @@
         //cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
         cell = [nib objectAtIndex:0];
     }
-    cell.nameLabel.text = [tableDataMu objectAtIndex:indexPath.row];
-    cell.thumbnailImageView.image = [UIImage imageNamed:[thumbnails objectAtIndex:indexPath.row]];
-    cell.timeLabel.text = [preptimeData objectAtIndex:indexPath.row];
+    //cell.nameLabel.text = [tableData objectAtIndex:indexPath.row];
+    //cell.thumbnailImageView.image = [UIImage imageNamed:[thumbnails objectAtIndex:indexPath.row]];
+    //cell.timeLabel.text = [preptimeData objectAtIndex:indexPath.row];
     //cell.prepTimeLabel.text = [prepTime objectAtIndex:indexPath.row];
     
-    //cell.textLabel.text = [tableData objectAtIndex:indexPath.row];
-    //cell.imageView.image = [UIImage imageNamed:[thumbnails objectAtIndex:indexPath.row]];
+    OS *OS = [OSs objectAtIndex:indexPath.row ];
+    cell.nameLabel.text = OS.name;
+    cell.imageView.image = [UIImage imageNamed:OS.imageFile];
+    cell.prepTimeLabel.text = OS.prepTime;
     return cell;
 }
 
